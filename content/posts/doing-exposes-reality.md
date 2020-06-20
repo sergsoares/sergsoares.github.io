@@ -1,7 +1,6 @@
 ---
 title: "Doing Exposes Reality"
 date: 2020-06-16T00:00:35-03:00
-draft: true
 ---
 
 Keep an personal blog is common in IT but beyond expose yourself to others and increase your visibility it improve our write skills, tecnical learning and help others with tips/insights.

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SergSoares</title>
-    <link>https://sergsoares.github.io/</link>
-    <description>Recent content on SergSoares</description>
+    <title>Posts on SergSoares</title>
+    <link>https://sergsoares.github.io/posts/</link>
+    <description>Recent content in Posts on SergSoares</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 16 Jun 2020 00:00:35 -0300</lastBuildDate>
     
-	<atom:link href="https://sergsoares.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sergsoares.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
