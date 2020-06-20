@@ -4,7 +4,7 @@ languageCode = "en-US"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-publishDir = "docs"
+publishDir = "sergsoares.github.io"
 
 [params]
   description = "Blog about automation and IT"
