@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog about automation and IT">
+    
+    <link rel="shortcut icon" href="https://sergsoares.github.io/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <title>Como Utilizar Docker Como Ambiente De Trabalho</title>
+</head>
+<body><header id="banner">
+    <h2><a href="https://sergsoares.github.io/">SergSoares</a></h2>
+    <nav>
+        <ul>
+            <li><a href="https://sergsoares.github.io/">posts</a></li>
+            
+            <li>
+                <a href="https://sergsoares.github.io/about/">About</a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+    <header id="post-header">
+        <h1>Como Utilizar Docker Como Ambiente De Trabalho</h1><time>October 19, 2020</time></header><p>Sempre achei interessante a ideia de rodar aplicações gráficas utilizando container e poder facilitar a replicação delas em diferentes locais.</p>
+<p>Pesquisando anos atrás formas de utilizar o docker para esse fim vi posts excelentes como do <a href="http://somatorio.org/pt-br/post/rodando-aplicacoes-gui-em-docker/">Somatório - Rodando aplicações GUI em Docker</a> e da <a href="https://blog.jessfraz.com/post/docker-containers-on-the-desktop/">Jessie - Docker Containers on the Desktop</a>.</p>
+<p>Entretanto esses cenários são para aplicações específicas, não para o ambiente de trabalho inteiro, recentemente pesquisando formas criar um home lab privado e implicações de segurança pensei em criar uma VM com interface gráfica na cloud:</p>
+<ul>
+<li><a href="https://medium.com/@0xson/running-ubuntu-desktop-gui-aws-ec2-instance-on-windows-3d4d070da434">Running Ubuntu Desktop GUI (AWS EC2 Instance) on Windows</a></li>
+<li><a href="https://medium.com/google-cloud/linux-gui-on-the-google-cloud-platform-800719ab27c5">Your desktop on Google Cloud Platform</a></li>
+</ul>
+<p>Porém o que mais me surpreendeu foi o <a href="https://medium.com/@techupbusiness/running-gui-apps-securely-in-docker-sandbox-5d945288929b">Running GUI apps securely in docker (sandbox)</a> que tem um repositório <a href="https://github.com/fcwu/docker-ubuntu-vnc-desktop">docker-ubuntu-vnc-desktop</a> muito bem organizado e trás como uma opção criar um container com ambiente gráfico Lxde/Lxqt.</p>
+<p>Nos testes tanto local quanto em uma VM na GCP funcionou muito bem a navegação e edição de código através dele, o docker in docker funcionou normalmente e ajustando a configuração de resolução permitiu ter uma experiência agradável de uso no <a href="https://www.realvnc.com/pt/connect/download/viewer/">VNC Viewer</a></p>
+<p>Pretendo criar um fork do projeto e customizar a image para usos próprios.</p>
+</article>
+
+        </main><footer id="footer">
+    Copyright © 2020 Sergio Soares
+</footer>
+</body>
+</html>
