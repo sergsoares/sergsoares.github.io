@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Sergsoares</title>
+    <link>https://example.com/posts/</link>
+    <description>Recent content in Posts on Sergsoares</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A good start template for Makefile</title>
+      <link>https://example.com/posts/2023-01-31-a-good-start-template-for-makefile/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2023-01-31-a-good-start-template-for-makefile/</guid>
+      <description>It is a simple template that i use frequently to initiate projects with Makefile.
+1 2 3 4 5 6 7 8 9 10 11 12 13 .PHONY: help # Show this help. help: @awk &amp;#39;/^#/{c=substr($$0,3);next}c&amp;amp;&amp;amp;/^\[\[:alpha:\]\]\[\[:alnum:\]\_-\]+:/{print substr($$1,1,index($$1,&amp;#34;:&amp;#34;)),c}1{c=0}&amp;#39; $(MAKEFILE\_LIST) | column -s: -t # Turn on docker-compose environment. up: @docker-compose up -d # Turn on docker-compose environment. down: @docker-compose down -d It use a help recipe in Make that process the comments on top of each task, providing descriptions for tasks and allowing discovery from other that use the project.</description>
+    </item>
+    
+    <item>
+      <title>Exploration and try new ideas are a awesome way to learn</title>
+      <link>https://example.com/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</link>
+      <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</guid>
+      <description>Looking at Hacker news, i saw a post call my attention.
+I rewrote in Crystal my tool to quickly create Kubernetes clusters in Hetzner
+And it called my attention for several factors:
+Create tooling that envolve K8S.
+Using a not too mainstream language (Crystal).
+A useful use case inside a real cloud vendor (Hetzner).
+I liked the insights that it give for me and the execution plan from the author, a lot of details need to be managed for the tool work.</description>
+    </item>
+    
+    <item>
+      <title>Show more lines in a grep filter.</title>
+      <link>https://example.com/posts/2022-09-15-show-more-lines-in-a-grep-filter/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-09-15-show-more-lines-in-a-grep-filter/</guid>
+      <description>Grep is an awesome linux app that is used for filtering text data, but sometimes we want more that only the lines of the match text.
+grep -A 1 # got 1 line after match grep -B 1 # got 1 line before match grep -C 1 # got before and after </description>
+    </item>
+    
+    <item>
+      <title>Metric server não respondendo no EKS</title>
+      <link>https://example.com/posts/2022-09-02-problema-com-metric-server-no-eks/</link>
+      <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-09-02-problema-com-metric-server-no-eks/</guid>
+      <description>Após configuração do cluster de Kubernetes usando o EKS e instalação do metric server, ao se executar o comando para obter o uso de recursos atuais dos nodes, o seguinte erro aparece:
+$ kubectl top nodes error: metrics not available yet ... Após verificar as issues do GitHub para entender melhor o cenários, a mais relevante foi EKS v1.22 &amp;ldquo;Error from server (ServiceUnavailable): the server is currently unable to handle the request (get nodes.</description>
+    </item>
+    
+    <item>
+      <title>Copiar kubernetes secret entre namespaces</title>
+      <link>https://example.com/posts/2022-08-16-copiar-kubernetes-secret-entre-namespaces/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-08-16-copiar-kubernetes-secret-entre-namespaces/</guid>
+      <description>Muitas vezes precisamos copiar um secret do kubernetes de um namespace para outro, visto que não temos a funcionalidade de secrets globais.
+Para isso podemos executar o camando abaixo, que exporta o manifesto de um secret, substitui o nome do namespace no manifesto e aplica no cluster novamente:
+1 kubectl get secret aws --namespace=namespace1 -o yaml | sed &amp;#39;s/namespace: .*/namespace: namespace2/&amp;#39; | kubectl apply -f - </description>
+    </item>
+    
+    <item>
+      <title>O que é um orquestrador de containers ?</title>
+      <link>https://example.com/posts/2022-08-08-o-que-e-um-orquestrador-de-containers/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-08-08-o-que-e-um-orquestrador-de-containers/</guid>
+      <description>Um orquestrador é um software desenvolvido para gerenciar containers em um ambiente distribuído entre máquinas virtuais, sendo o componente de controle nesse cenário distribuído suas principais características são:
+Permitir distribuir a carga de trabalho entre as diversas máquinas. Garantir que o ciclo de vida do container seja feito com sucesso (desde sua criação até finalização). Manter a gestão dos recursos entre as diversas máquinas, permitindo que um container que não tem recurso disponível na máquina A seja criado na máquina B.</description>
+    </item>
+    
+    <item>
+      <title>O que é o Rancher Desktop ?</title>
+      <link>https://example.com/posts/2022-08-05-o-que-e-o-rancher-desktop/</link>
+      <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-08-05-o-que-e-o-rancher-desktop/</guid>
+      <description>O Rancher Desktop é uma aplicação multiplataforma feita pela SUSE que fornece mecanismos para gestão de containers e uma interface gráfica para
+a instalação de um cluster Kubernetes local.
+As principais facilidades de utilizar o Rancher Desktop:
+O pacote de instalação já instala o Nerdctl para gestão das imagens e execução dos containers. Permite que as imagens criadas já sejam utilizadas dentro do Kubernetes. Permite implantar um cluster de Kubernetes utilizando a distribuição K3S sendo possível escolher a versão que se desejada instalar através da interface gráfica.</description>
+    </item>
+    
+    <item>
+      <title>O que OCI tem a ver com a ver com containers ?</title>
+      <link>https://example.com/posts/2022-08-04-o-que-oci-tem-a-ver-com-a-ver-com-containers/</link>
+      <pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-08-04-o-que-oci-tem-a-ver-com-a-ver-com-containers/</guid>
+      <description>Creio que já viu em blogs técnicos, documentações e posts no dia a dia de trabalho o termo OCI sempre relacionado a docker e containers, mas o que de fato é OCI e como ele tem relação com docker/containers ?
+OCI é a sigla para Open Container Initiative que seria uma organização criada por empresas relacionados a tecnologia de container como a Docker, Inc (empresa por trás da ferramenta docker) e que tem como objetivo prover um padrão para:</description>
+    </item>
+    
+    <item>
+      <title>Por que usar o podman se temos o Docker ?</title>
+      <link>https://example.com/posts/2022-08-03-por-que-usar-o-podman-se-temos-o-docker/</link>
+      <pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-08-03-por-que-usar-o-podman-se-temos-o-docker/</guid>
+      <description>O Podman é uma ferramenta de linha de comando para execução de containers, sendo uma alternativa ao docker, mas quais são suas principais características?
+Daemonless - O Docker é uma ferramenta que precisa ser instalada com privilégios de usuário root, enquanto o podman por ser daemonless não precisa desses mesmos privilégios facilitando o seu uso.
+Rootless - O podman aplica o conceito de rootless para a execução dos seus containers reduzindo a superfície de ataque através de um container infectado ao host, atualmente já temos o suporte no docker nas novas versões.</description>
+    </item>
+    
+    <item>
+      <title>Restoring AMI with Packer</title>
+      <link>https://example.com/posts/2022-03-30-restoring/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-03-30-restoring/</guid>
+      <description>We have several options to discover an AMI id to use in infra as code resources, but with Packer from Hashicorp it is simple as define a block that will recover based on a pattern the id.
+Above the solution using filter to restore latest image id for a ubuntu 20.04 version.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 source &amp;#34;amazon-ebs&amp;#34; &amp;#34;ubuntu&amp;#34; { ami_name = &amp;#34;azure-agent-image-v0.</description>
+    </item>
+    
+    <item>
+      <title>More digital products, more security assets</title>
+      <link>https://example.com/posts/2022-03-15-more-digital-products-more-security-assets/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-03-15-more-digital-products-more-security-assets/</guid>
+      <description>Today with digital products that interact in our day to day increasing the number of security assets that we need to manage is increasing too (password, key files, 2FA components).
+And if you are part of a critical infrastructure role or you have ownership inside a company, there are more items and in some cases more critical.
+Some items that can be need managed and exists in multiple contexts (company tenant&amp;rsquo;s, work/personal).</description>
+    </item>
+    
+    <item>
+      <title>Technical blogs for SRE/Infra</title>
+      <link>https://example.com/posts/2022-03-11-technical-blogs-for-sre-infra/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-03-11-technical-blogs-for-sre-infra/</guid>
+      <description>A list of great technical blogs of companies and organizations that write about sre, kubernetes and other infrastructure topics, it will be updated.
+https://sensu.io/blog/ https://www.metricfire.com/blog/ https://sysdig.com/blog/ https://containerjournal.com/ https://tailscale.com/blog/ https://blog.replit.com/ https://www.observability.blog/ https://grafana.com/categories/engineering/ https://www.sentinelone.com/blog/ https://openmetrics.io/ https://fly.io/blog/ https://slack.engineering/ https://www.weave.works/blog/ https://www.padok.fr/en/blog/ https://blog.logrocket.com/ https://www.cncf.io/blog </description>
+    </item>
+    
+    <item>
+      <title>More experience give us less certainties</title>
+      <link>https://example.com/posts/2022-03-02-more-experience-give-us-less-certainties/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-03-02-more-experience-give-us-less-certainties/</guid>
+      <description>As become experienced we start discuss and dialogue with ourself about methodologies and practices.
+What we learn touch the reality but with several new and not expected variables, that makes us rethink based on that specific use case.
+It lead us to change ideas, plans and decisions because we then learn that neither everything can be solved use same tactics and it bring a lot of new challenge that make us enjoy more the process.</description>
+    </item>
+    
+    <item>
+      <title>Best generic folder for linux apps</title>
+      <link>https://example.com/posts/2022-03-01-best-generic-folder-for-linux-apps/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-03-01-best-generic-folder-for-linux-apps/</guid>
+      <description>Each distro in linux can have different paths for install applications, but a good generic option seems:
+/opt/&amp;lt;app_folder&amp;gt;/&amp;lt;executable&amp;gt; https://unix.stackexchange.com/questions/127076/into-which-directory-should-i-install-programs-in-linux </description>
+    </item>
+    
+    <item>
+      <title>Solved issues are great in open source terraform</title>
+      <link>https://example.com/posts/2022-03-01-solved-issues-are-great-in-open-source/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-03-01-solved-issues-are-great-in-open-source/</guid>
+      <description>Test Errors be part of our day work at tech, but working with open source facilitate a lot, tools like terraform show us that community has power.
+At work today received the below error in a &amp;ldquo;terraform plan&amp;rdquo;:
+Stack trace from the terraform-provider-aws_v3.74.0_x5 plugin: panic: interface conversion: interface {} is nil, not *conns.AWSClient And with a fast search I found a Github Issue in Terraform recommending update Terraform version.</description>
+    </item>
+    
+    <item>
+      <title>Como utilizar docker como ambiente de trabalho</title>
+      <link>https://example.com/posts/2020-04-26-example-post-3/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2020-04-26-example-post-3/</guid>
+      <description>Sempre achei interessante a ideia de rodar aplicações gráficas utilizando container e poder facilitar a replicação delas em diferentes locais.
+Pesquisando anos atrás formas de utilizar o docker para esse fim vi posts excelentes como do Somatório - Rodando aplicações GUI em Docker e da Jessie - Docker Containers on the Desktop.
+Entretanto esses cenários são para aplicações específicas, não para o ambiente de trabalho inteiro, recentemente pesquisando formas criar um home lab privado e implicações de segurança pensei em criar uma VM com interface gráfica na cloud:</description>
+    </item>
+    
+    <item>
+      <title>Doing exposes reality</title>
+      <link>https://example.com/posts/2020-04-26-example-post-2/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2020-04-26-example-post-2/</guid>
+      <description>Keep an personal blog is common in IT but beyond expose yourself to others and increase your visibility it improve our write skills, tecnical learning and help others with tips/insights.
+In a past i already try write with frequency but fall in the side-project trap:
+The main points to avoid fall in this trap again:
+Keep blog simple and focus in content Small and simple posts to gain cadency Talk about work insights and problems solved Trying again this habit, using Hugo a static generator really fast made in Go and starting from Minimal template created by Lukas Joswiak.</description>
+    </item>
+    
+    <item>
+      <title>Example Lazy Load Image</title>
+      <link>https://example.com/posts/example-load/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/example-load/</guid>
+      <description>Nya nya nyan meow meow mama More napping, more napping all the napping is exhausting stretch out on bed you are a captive audience while sitting on the toilet, pet me slap the dog because cats rule bleghbleghvomit my furball really tie the room together always hungry. Humans,humans, humans oh how much they love us felines we are the center of attention they feed, they clean miaow then turn around and show you my bum.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reflection on Sergsoares</title>
+    <link>https://example.com/categories/reflection/</link>
+    <description>Recent content in reflection on Sergsoares</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/reflection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>More experience give us less certainties</title>
+      <link>https://example.com/posts/2022-03-02-more-experience-give-us-less-certainties/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-03-02-more-experience-give-us-less-certainties/</guid>
+      <description>As become experienced we start discuss and dialogue with ourself about methodologies and practices.
+What we learn touch the reality but with several new and not expected variables, that makes us rethink based on that specific use case.
+It lead us to change ideas, plans and decisions because we then learn that neither everything can be solved use same tactics and it bring a lot of new challenge that make us enjoy more the process.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>technical on Sergsoares</title>
+    <link>https://example.com/categories/technical/</link>
+    <description>Recent content in technical on Sergsoares</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/technical/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical blogs for SRE/Infra</title>
+      <link>https://example.com/posts/2022-03-11-technical-blogs-for-sre-infra/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-03-11-technical-blogs-for-sre-infra/</guid>
+      <description>A list of great technical blogs of companies and organizations that write about sre, kubernetes and other infrastructure topics, it will be updated.
+https://sensu.io/blog/ https://www.metricfire.com/blog/ https://sysdig.com/blog/ https://containerjournal.com/ https://tailscale.com/blog/ https://blog.replit.com/ https://www.observability.blog/ https://grafana.com/categories/engineering/ https://www.sentinelone.com/blog/ https://openmetrics.io/ https://fly.io/blog/ https://slack.engineering/ https://www.weave.works/blog/ https://www.padok.fr/en/blog/ https://blog.logrocket.com/ https://www.cncf.io/blog </description>
+    </item>
+    
+  </channel>
+</rss>

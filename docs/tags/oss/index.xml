@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oss on Sergsoares</title>
+    <link>https://example.com/tags/oss/</link>
+    <description>Recent content in oss on Sergsoares</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/oss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solved issues are great in open source terraform</title>
+      <link>https://example.com/posts/2022-03-01-solved-issues-are-great-in-open-source/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-03-01-solved-issues-are-great-in-open-source/</guid>
+      <description>Test Errors be part of our day work at tech, but working with open source facilitate a lot, tools like terraform show us that community has power.
+At work today received the below error in a &amp;ldquo;terraform plan&amp;rdquo;:
+Stack trace from the terraform-provider-aws_v3.74.0_x5 plugin: panic: interface conversion: interface {} is nil, not *conns.AWSClient And with a fast search I found a Github Issue in Terraform recommending update Terraform version.</description>
+    </item>
+    
+  </channel>
+</rss>

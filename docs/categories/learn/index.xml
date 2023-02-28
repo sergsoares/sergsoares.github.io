@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>learn on Sergsoares</title>
+    <link>https://example.com/categories/learn/</link>
+    <description>Recent content in learn on Sergsoares</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/learn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploration and try new ideas are a awesome way to learn</title>
+      <link>https://example.com/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</link>
+      <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</guid>
+      <description>Looking at Hacker news, i saw a post call my attention.
+I rewrote in Crystal my tool to quickly create Kubernetes clusters in Hetzner
+And it called my attention for several factors:
+Create tooling that envolve K8S.
+Using a not too mainstream language (Crystal).
+A useful use case inside a real cloud vendor (Hetzner).
+I liked the insights that it give for me and the execution plan from the author, a lot of details need to be managed for the tool work.</description>
+    </item>
+    
+  </channel>
+</rss>

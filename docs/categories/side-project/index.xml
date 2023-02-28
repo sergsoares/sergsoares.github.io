@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>side-project on Sergsoares</title>
+    <link>https://example.com/categories/side-project/</link>
+    <description>Recent content in side-project on Sergsoares</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/side-project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doing exposes reality</title>
+      <link>https://example.com/posts/2020-04-26-example-post-2/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2020-04-26-example-post-2/</guid>
+      <description>Keep an personal blog is common in IT but beyond expose yourself to others and increase your visibility it improve our write skills, tecnical learning and help others with tips/insights.
+In a past i already try write with frequency but fall in the side-project trap:
+The main points to avoid fall in this trap again:
+Keep blog simple and focus in content Small and simple posts to gain cadency Talk about work insights and problems solved Trying again this habit, using Hugo a static generator really fast made in Go and starting from Minimal template created by Lukas Joswiak.</description>
+    </item>
+    
+  </channel>
+</rss>

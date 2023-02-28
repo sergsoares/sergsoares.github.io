@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>make on Sergsoares</title>
+    <link>https://example.com/categories/make/</link>
+    <description>Recent content in make on Sergsoares</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/make/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A good start template for Makefile</title>
+      <link>https://example.com/posts/2023-01-31-a-good-start-template-for-makefile/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2023-01-31-a-good-start-template-for-makefile/</guid>
+      <description>It is a simple template that i use frequently to initiate projects with Makefile.
+1 2 3 4 5 6 7 8 9 10 11 12 13 .PHONY: help # Show this help. help: @awk &amp;#39;/^#/{c=substr($$0,3);next}c&amp;amp;&amp;amp;/^\[\[:alpha:\]\]\[\[:alnum:\]\_-\]+:/{print substr($$1,1,index($$1,&amp;#34;:&amp;#34;)),c}1{c=0}&amp;#39; $(MAKEFILE\_LIST) | column -s: -t # Turn on docker-compose environment. up: @docker-compose up -d # Turn on docker-compose environment. down: @docker-compose down -d It use a help recipe in Make that process the comments on top of each task, providing descriptions for tasks and allowing discovery from other that use the project.</description>
+    </item>
+    
+  </channel>
+</rss>

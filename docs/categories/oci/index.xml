@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oci on Sergsoares</title>
+    <link>https://example.com/categories/oci/</link>
+    <description>Recent content in oci on Sergsoares</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/oci/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>O que OCI tem a ver com a ver com containers ?</title>
+      <link>https://example.com/posts/2022-08-04-o-que-oci-tem-a-ver-com-a-ver-com-containers/</link>
+      <pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-08-04-o-que-oci-tem-a-ver-com-a-ver-com-containers/</guid>
+      <description>Creio que já viu em blogs técnicos, documentações e posts no dia a dia de trabalho o termo OCI sempre relacionado a docker e containers, mas o que de fato é OCI e como ele tem relação com docker/containers ?
+OCI é a sigla para Open Container Initiative que seria uma organização criada por empresas relacionados a tecnologia de container como a Docker, Inc (empresa por trás da ferramenta docker) e que tem como objetivo prover um padrão para:</description>
+    </item>
+    
+  </channel>
+</rss>

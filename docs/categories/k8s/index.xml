@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>k8s on Sergsoares</title>
+    <link>https://example.com/categories/k8s/</link>
+    <description>Recent content in k8s on Sergsoares</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/k8s/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Metric server não respondendo no EKS</title>
+      <link>https://example.com/posts/2022-09-02-problema-com-metric-server-no-eks/</link>
+      <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-09-02-problema-com-metric-server-no-eks/</guid>
+      <description>Após configuração do cluster de Kubernetes usando o EKS e instalação do metric server, ao se executar o comando para obter o uso de recursos atuais dos nodes, o seguinte erro aparece:
+$ kubectl top nodes error: metrics not available yet ... Após verificar as issues do GitHub para entender melhor o cenários, a mais relevante foi EKS v1.22 &amp;ldquo;Error from server (ServiceUnavailable): the server is currently unable to handle the request (get nodes.</description>
+    </item>
+    
+    <item>
+      <title>Copiar kubernetes secret entre namespaces</title>
+      <link>https://example.com/posts/2022-08-16-copiar-kubernetes-secret-entre-namespaces/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-08-16-copiar-kubernetes-secret-entre-namespaces/</guid>
+      <description>Muitas vezes precisamos copiar um secret do kubernetes de um namespace para outro, visto que não temos a funcionalidade de secrets globais.
+Para isso podemos executar o camando abaixo, que exporta o manifesto de um secret, substitui o nome do namespace no manifesto e aplica no cluster novamente:
+1 kubectl get secret aws --namespace=namespace1 -o yaml | sed &amp;#39;s/namespace: .*/namespace: namespace2/&amp;#39; | kubectl apply -f - </description>
+    </item>
+    
+    <item>
+      <title>O que é um orquestrador de containers ?</title>
+      <link>https://example.com/posts/2022-08-08-o-que-e-um-orquestrador-de-containers/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-08-08-o-que-e-um-orquestrador-de-containers/</guid>
+      <description>Um orquestrador é um software desenvolvido para gerenciar containers em um ambiente distribuído entre máquinas virtuais, sendo o componente de controle nesse cenário distribuído suas principais características são:
+Permitir distribuir a carga de trabalho entre as diversas máquinas. Garantir que o ciclo de vida do container seja feito com sucesso (desde sua criação até finalização). Manter a gestão dos recursos entre as diversas máquinas, permitindo que um container que não tem recurso disponível na máquina A seja criado na máquina B.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Sergsoares</title>
+    <link>https://example.com/categories/linux/</link>
+    <description>Recent content in linux on Sergsoares</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Show more lines in a grep filter.</title>
+      <link>https://example.com/posts/2022-09-15-show-more-lines-in-a-grep-filter/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-09-15-show-more-lines-in-a-grep-filter/</guid>
+      <description>Grep is an awesome linux app that is used for filtering text data, but sometimes we want more that only the lines of the match text.
+grep -A 1 # got 1 line after match grep -B 1 # got 1 line before match grep -C 1 # got before and after </description>
+    </item>
+    
+    <item>
+      <title>Best generic folder for linux apps</title>
+      <link>https://example.com/posts/2022-03-01-best-generic-folder-for-linux-apps/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-03-01-best-generic-folder-for-linux-apps/</guid>
+      <description>Each distro in linux can have different paths for install applications, but a good generic option seems:
+/opt/&amp;lt;app_folder&amp;gt;/&amp;lt;executable&amp;gt; https://unix.stackexchange.com/questions/127076/into-which-directory-should-i-install-programs-in-linux </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aws on Sergsoares</title>
+    <link>https://example.com/categories/aws/</link>
+    <description>Recent content in aws on Sergsoares</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Metric server não respondendo no EKS</title>
+      <link>https://example.com/posts/2022-09-02-problema-com-metric-server-no-eks/</link>
+      <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2022-09-02-problema-com-metric-server-no-eks/</guid>
+      <description>Após configuração do cluster de Kubernetes usando o EKS e instalação do metric server, ao se executar o comando para obter o uso de recursos atuais dos nodes, o seguinte erro aparece:
+$ kubectl top nodes error: metrics not available yet ... Após verificar as issues do GitHub para entender melhor o cenários, a mais relevante foi EKS v1.22 &amp;ldquo;Error from server (ServiceUnavailable): the server is currently unable to handle the request (get nodes.</description>
+    </item>
+    
+  </channel>
+</rss>

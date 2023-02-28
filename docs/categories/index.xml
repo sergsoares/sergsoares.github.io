@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Sergsoares</title>
+    <link>https://example.com/categories/</link>
+    <description>Recent content in Categories on Sergsoares</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>make</title>
+      <link>https://example.com/categories/make/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/make/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>learn</title>
+      <link>https://example.com/categories/learn/</link>
+      <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://example.com/categories/linux/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws</title>
+      <link>https://example.com/categories/aws/</link>
+      <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eks</title>
+      <link>https://example.com/categories/eks/</link>
+      <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/eks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>k8s</title>
+      <link>https://example.com/categories/k8s/</link>
+      <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rancher</title>
+      <link>https://example.com/categories/rancher/</link>
+      <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/rancher/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>container</title>
+      <link>https://example.com/categories/container/</link>
+      <pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>oci</title>
+      <link>https://example.com/categories/oci/</link>
+      <pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/oci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>podman</title>
+      <link>https://example.com/categories/podman/</link>
+      <pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/podman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>packer</title>
+      <link>https://example.com/categories/packer/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/packer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://example.com/categories/security/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>technical</title>
+      <link>https://example.com/categories/technical/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/technical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reflection</title>
+      <link>https://example.com/categories/reflection/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/reflection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://example.com/categories/docker/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>side-project</title>
+      <link>https://example.com/categories/side-project/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/side-project/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
