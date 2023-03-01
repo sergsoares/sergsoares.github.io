@@ -113,7 +113,7 @@
     <p>Após configuração do cluster de Kubernetes usando o EKS e instalação do <a href="https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html">metric server</a>, ao se executar o comando para obter o uso de recursos atuais dos nodes, o seguinte erro aparece:</p>
 <pre tabindex="0"><code>$ kubectl top nodes
 error: metrics not available yet ...
-</code></pre><p>Após verificar as issues do GitHub para entender melhor o cenários, a mais relevante foi <a href="https://github.com/kubernetes-sigs/metrics-server/issues/1024">EKS v1.22 &ldquo;Error from server (ServiceUnavailable): the server is currently unable to handle the request (get nodes.metrics.k8s.io)</a> repoduzindo o mesmo cenário.</p>
+</code></pre><p>Após verificar as issues do GitHub para entender melhor o cenários, a mais relevante foi <a href="https://github.com/kubernetes-sigs/metrics-server/issues/1024">EKS v1.22 &ldquo;Error from server (ServiceUnavailable): the server is currently unable to handle the request (get nodes.metrics.k8s.io)</a> reproduzindo o mesmo cenário.</p>
 <p>Seguindo o fluxo de troubleshooting recomendado foi possível verificar o erro dentro do componente, onde o control plane não consegue se comunicar com com a api de métricas do node:</p>
 <pre tabindex="0"><code>$ kubectl get apiservices.apiregistration.k8s.io
 v1beta1.metrics.k8s.io ...

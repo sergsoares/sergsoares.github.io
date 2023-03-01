@@ -6,3 +6,6 @@ run:
 
 create-%:
 	hugo new posts/installing-binaries.md
+
+push:
+	git push origin master
