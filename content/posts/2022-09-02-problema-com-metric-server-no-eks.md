@@ -16,7 +16,7 @@ error: metrics not available yet ...
 
 Após verificar as issues do GitHub para entender melhor o cenários, a mais relevante foi [EKS v1.22 "Error from server (ServiceUnavailable): the server is currently unable to handle the request (get nodes.metrics.k8s.io)](https://github.com/kubernetes-sigs/metrics-server/issues/1024) repoduzindo o mesmo cenário.
 
-Seguindo o fluxo de troubleshooting recomendado foi possível verificar o erro dentro do componente, onde o control plane não não consegue se comunicar com com a api de métricas do node:
+Seguindo o fluxo de troubleshooting recomendado foi possível verificar o erro dentro do componente, onde o control plane não consegue se comunicar com com a api de métricas do node:
 
 ```
 $ kubectl get apiservices.apiregistration.k8s.io
