@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>markdown on Sergsoares</title>
-    <link>https://example.com/tags/markdown/</link>
+    <link>https://sergsoares.github.io/tags/markdown/</link>
     <description>Recent content in markdown on Sergsoares</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sergsoares.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example Lazy Load Image</title>
-      <link>https://example.com/posts/example-load/</link>
+      <link>https://sergsoares.github.io/posts/example-load/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/posts/example-load/</guid>
+      <guid>https://sergsoares.github.io/posts/example-load/</guid>
       <description>Nya nya nyan meow meow mama More napping, more napping all the napping is exhausting stretch out on bed you are a captive audience while sitting on the toilet, pet me slap the dog because cats rule bleghbleghvomit my furball really tie the room together always hungry. Humans,humans, humans oh how much they love us felines we are the center of attention they feed, they clean miaow then turn around and show you my bum.</description>
     </item>
     

@@ -2,138 +2,138 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/posts/2023-01-31-a-good-start-template-for-makefile/</loc>
+    <loc>https://sergsoares.github.io/posts/2023-01-31-a-good-start-template-for-makefile/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://sergsoares.github.io/categories/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/make/</loc>
+    <loc>https://sergsoares.github.io/categories/make/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/</loc>
+    <loc>https://sergsoares.github.io/posts/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/</loc>
+    <loc>https://sergsoares.github.io/</loc>
     <lastmod>2023-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</loc>
     <lastmod>2022-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/learn/</loc>
+    <loc>https://sergsoares.github.io/categories/learn/</loc>
     <lastmod>2022-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/linux/</loc>
+    <loc>https://sergsoares.github.io/categories/linux/</loc>
     <lastmod>2022-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-09-15-show-more-lines-in-a-grep-filter/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-09-15-show-more-lines-in-a-grep-filter/</loc>
     <lastmod>2022-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/aws/</loc>
+    <loc>https://sergsoares.github.io/categories/aws/</loc>
     <lastmod>2022-09-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/eks/</loc>
+    <loc>https://sergsoares.github.io/categories/eks/</loc>
     <lastmod>2022-09-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/k8s/</loc>
+    <loc>https://sergsoares.github.io/categories/k8s/</loc>
     <lastmod>2022-09-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-09-02-problema-com-metric-server-no-eks/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-09-02-problema-com-metric-server-no-eks/</loc>
     <lastmod>2022-09-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-08-16-copiar-kubernetes-secret-entre-namespaces/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-08-16-copiar-kubernetes-secret-entre-namespaces/</loc>
     <lastmod>2022-08-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-08-08-o-que-e-um-orquestrador-de-containers/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-08-08-o-que-e-um-orquestrador-de-containers/</loc>
     <lastmod>2022-08-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-08-05-o-que-e-o-rancher-desktop/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-08-05-o-que-e-o-rancher-desktop/</loc>
     <lastmod>2022-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/rancher/</loc>
+    <loc>https://sergsoares.github.io/categories/rancher/</loc>
     <lastmod>2022-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/container/</loc>
+    <loc>https://sergsoares.github.io/categories/container/</loc>
     <lastmod>2022-08-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-08-04-o-que-oci-tem-a-ver-com-a-ver-com-containers/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-08-04-o-que-oci-tem-a-ver-com-a-ver-com-containers/</loc>
     <lastmod>2022-08-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/oci/</loc>
+    <loc>https://sergsoares.github.io/categories/oci/</loc>
     <lastmod>2022-08-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/podman/</loc>
+    <loc>https://sergsoares.github.io/categories/podman/</loc>
     <lastmod>2022-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-08-03-por-que-usar-o-podman-se-temos-o-docker/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-08-03-por-que-usar-o-podman-se-temos-o-docker/</loc>
     <lastmod>2022-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/packer/</loc>
+    <loc>https://sergsoares.github.io/categories/packer/</loc>
     <lastmod>2022-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-03-30-restoring/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-03-30-restoring/</loc>
     <lastmod>2022-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-03-15-more-digital-products-more-security-assets/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-03-15-more-digital-products-more-security-assets/</loc>
     <lastmod>2022-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/security/</loc>
+    <loc>https://sergsoares.github.io/categories/security/</loc>
     <lastmod>2022-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://sergsoares.github.io/tags/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/technical/</loc>
+    <loc>https://sergsoares.github.io/tags/technical/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/technical/</loc>
+    <loc>https://sergsoares.github.io/categories/technical/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-03-11-technical-blogs-for-sre-infra/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-03-11-technical-blogs-for-sre-infra/</loc>
     <lastmod>2022-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-03-02-more-experience-give-us-less-certainties/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-03-02-more-experience-give-us-less-certainties/</loc>
     <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/reflection/</loc>
+    <loc>https://sergsoares.github.io/categories/reflection/</loc>
     <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-03-01-best-generic-folder-for-linux-apps/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-03-01-best-generic-folder-for-linux-apps/</loc>
     <lastmod>2022-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/oss/</loc>
+    <loc>https://sergsoares.github.io/tags/oss/</loc>
     <lastmod>2022-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2022-03-01-solved-issues-are-great-in-open-source/</loc>
+    <loc>https://sergsoares.github.io/posts/2022-03-01-solved-issues-are-great-in-open-source/</loc>
     <lastmod>2022-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/terraform/</loc>
+    <loc>https://sergsoares.github.io/tags/terraform/</loc>
     <lastmod>2022-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2020-04-26-example-post-3/</loc>
+    <loc>https://sergsoares.github.io/posts/2020-04-26-example-post-3/</loc>
     <lastmod>2020-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/docker/</loc>
+    <loc>https://sergsoares.github.io/categories/docker/</loc>
     <lastmod>2020-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/2020-04-26-example-post-2/</loc>
+    <loc>https://sergsoares.github.io/posts/2020-04-26-example-post-2/</loc>
     <lastmod>2020-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/side-project/</loc>
+    <loc>https://sergsoares.github.io/categories/side-project/</loc>
     <lastmod>2020-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/example-load/</loc>
+    <loc>https://sergsoares.github.io/posts/example-load/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/image/</loc>
+    <loc>https://sergsoares.github.io/tags/image/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/markdown/</loc>
+    <loc>https://sergsoares.github.io/tags/markdown/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/text/</loc>
+    <loc>https://sergsoares.github.io/tags/text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/articles/</loc>
+    <loc>https://sergsoares.github.io/articles/</loc>
   </url>
 </urlset>

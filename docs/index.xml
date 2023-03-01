@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sergsoares</title>
-    <link>https://example.com/</link>
+    <link>https://sergsoares.github.io/</link>
     <description>Recent content on Sergsoares</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sergsoares.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
     <title>A good start template for Makefile</title>
-    <link>https://example.com/posts/2023-01-31-a-good-start-template-for-makefile/</link>
+    <link>https://sergsoares.github.io/posts/2023-01-31-a-good-start-template-for-makefile/</link>
     <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2023-01-31-a-good-start-template-for-makefile/</guid>
+    <guid>https://sergsoares.github.io/posts/2023-01-31-a-good-start-template-for-makefile/</guid>
     <description>
         &lt;p&gt;It is a simple template that i use frequently to initiate projects with Makefile.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -58,10 +58,10 @@ down   Turn on docker-compose environment
     
     <item>
     <title>Exploration and try new ideas are a awesome way to learn</title>
-    <link>https://example.com/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</link>
+    <link>https://sergsoares.github.io/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</link>
     <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</guid>
     <description>
         &lt;p&gt;Looking at Hacker news, i saw a post call my attention.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://news.ycombinator.com/item?id=34185209&#34;&gt;I rewrote in Crystal my tool to quickly create Kubernetes clusters in Hetzner&lt;/a&gt;&lt;/p&gt;
@@ -86,10 +86,10 @@ down   Turn on docker-compose environment
     
     <item>
     <title>Show more lines in a grep filter.</title>
-    <link>https://example.com/posts/2022-09-15-show-more-lines-in-a-grep-filter/</link>
+    <link>https://sergsoares.github.io/posts/2022-09-15-show-more-lines-in-a-grep-filter/</link>
     <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-09-15-show-more-lines-in-a-grep-filter/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-09-15-show-more-lines-in-a-grep-filter/</guid>
     <description>
         &lt;p&gt;Grep is an awesome linux app that is used for filtering text data, but sometimes we want more that only the lines of the match text.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;grep -A 1 # got 1 line after match
@@ -101,16 +101,16 @@ grep -C 1 # got before and after
     
     <item>
     <title>Metric server não respondendo no EKS</title>
-    <link>https://example.com/posts/2022-09-02-problema-com-metric-server-no-eks/</link>
+    <link>https://sergsoares.github.io/posts/2022-09-02-problema-com-metric-server-no-eks/</link>
     <pubDate>Fri, 02 Sep 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-09-02-problema-com-metric-server-no-eks/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-09-02-problema-com-metric-server-no-eks/</guid>
     <description>
         &lt;p&gt;Após configuração do cluster de Kubernetes usando o EKS e instalação do &lt;a href=&#34;https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html&#34;&gt;metric server&lt;/a&gt;, ao se executar o comando para obter o uso de recursos atuais dos nodes, o seguinte erro aparece:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ kubectl top nodes
 error: metrics not available yet ...
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Após verificar as issues do GitHub para entender melhor o cenários, a mais relevante foi &lt;a href=&#34;https://github.com/kubernetes-sigs/metrics-server/issues/1024&#34;&gt;EKS v1.22 &amp;ldquo;Error from server (ServiceUnavailable): the server is currently unable to handle the request (get nodes.metrics.k8s.io)&lt;/a&gt; repoduzindo o mesmo cenário.&lt;/p&gt;
-&lt;p&gt;Seguindo o fluxo de troubleshooting recomendado foi possível verificar o erro dentro do componente, onde o control plane não não consegue se comunicar com com a api de métricas do node:&lt;/p&gt;
+&lt;p&gt;Seguindo o fluxo de troubleshooting recomendado foi possível verificar o erro dentro do componente, onde o control plane não consegue se comunicar com com a api de métricas do node:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ kubectl get apiservices.apiregistration.k8s.io
 v1beta1.metrics.k8s.io ...
 
@@ -124,10 +124,10 @@ Message:               failing or missing response from https://10.46.5.75:4443/
     
     <item>
     <title>Copiar kubernetes secret entre namespaces</title>
-    <link>https://example.com/posts/2022-08-16-copiar-kubernetes-secret-entre-namespaces/</link>
+    <link>https://sergsoares.github.io/posts/2022-08-16-copiar-kubernetes-secret-entre-namespaces/</link>
     <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-08-16-copiar-kubernetes-secret-entre-namespaces/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-08-16-copiar-kubernetes-secret-entre-namespaces/</guid>
     <description>
         &lt;p&gt;Muitas vezes precisamos copiar um secret do kubernetes de um namespace para outro, visto que não temos a funcionalidade de secrets globais.&lt;/p&gt;
 &lt;p&gt;Para isso podemos executar o camando abaixo, que exporta o manifesto de um secret, substitui o nome do namespace no manifesto e aplica no cluster novamente:&lt;/p&gt;
@@ -145,10 +145,10 @@ Message:               failing or missing response from https://10.46.5.75:4443/
     
     <item>
     <title>O que é um orquestrador de containers ?</title>
-    <link>https://example.com/posts/2022-08-08-o-que-e-um-orquestrador-de-containers/</link>
+    <link>https://sergsoares.github.io/posts/2022-08-08-o-que-e-um-orquestrador-de-containers/</link>
     <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-08-08-o-que-e-um-orquestrador-de-containers/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-08-08-o-que-e-um-orquestrador-de-containers/</guid>
     <description>
         &lt;p&gt;Um orquestrador é um software desenvolvido para gerenciar containers em um ambiente distribuído entre máquinas virtuais, sendo o componente de controle nesse cenário distribuído suas principais características são:&lt;/p&gt;
 &lt;ul&gt;
@@ -164,10 +164,10 @@ Message:               failing or missing response from https://10.46.5.75:4443/
     
     <item>
     <title>O que é o Rancher Desktop ?</title>
-    <link>https://example.com/posts/2022-08-05-o-que-e-o-rancher-desktop/</link>
+    <link>https://sergsoares.github.io/posts/2022-08-05-o-que-e-o-rancher-desktop/</link>
     <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-08-05-o-que-e-o-rancher-desktop/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-08-05-o-que-e-o-rancher-desktop/</guid>
     <description>
         &lt;p&gt;O &lt;a href=&#34;https://rancherdesktop.io&#34;&gt;Rancher Desktop&lt;/a&gt; é uma aplicação multiplataforma feita pela &lt;a href=&#34;https://www.suse.com/&#34;&gt;SUSE&lt;/a&gt; que fornece mecanismos para gestão de containers e uma interface gráfica para&lt;br&gt;
 a instalação de um cluster Kubernetes local.&lt;/p&gt;
@@ -189,10 +189,10 @@ a instalação de um cluster Kubernetes local.&lt;/p&gt;
     
     <item>
     <title>O que OCI tem a ver com a ver com containers ?</title>
-    <link>https://example.com/posts/2022-08-04-o-que-oci-tem-a-ver-com-a-ver-com-containers/</link>
+    <link>https://sergsoares.github.io/posts/2022-08-04-o-que-oci-tem-a-ver-com-a-ver-com-containers/</link>
     <pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-08-04-o-que-oci-tem-a-ver-com-a-ver-com-containers/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-08-04-o-que-oci-tem-a-ver-com-a-ver-com-containers/</guid>
     <description>
         &lt;p&gt;Creio que já viu em blogs técnicos, documentações e posts no dia a dia de trabalho o termo OCI sempre relacionado a docker e containers, mas o que de fato é OCI e como ele tem relação com docker/containers ?&lt;/p&gt;
 &lt;p&gt;OCI é a sigla para Open Container Initiative que seria uma organização criada por empresas relacionados a tecnologia de container como a Docker, Inc (empresa por trás da ferramenta docker) e que tem como objetivo prover um padrão para:&lt;/p&gt;
@@ -208,10 +208,10 @@ a instalação de um cluster Kubernetes local.&lt;/p&gt;
     
     <item>
     <title>Por que usar o podman se temos o Docker ?</title>
-    <link>https://example.com/posts/2022-08-03-por-que-usar-o-podman-se-temos-o-docker/</link>
+    <link>https://sergsoares.github.io/posts/2022-08-03-por-que-usar-o-podman-se-temos-o-docker/</link>
     <pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-08-03-por-que-usar-o-podman-se-temos-o-docker/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-08-03-por-que-usar-o-podman-se-temos-o-docker/</guid>
     <description>
         &lt;p&gt;O Podman é uma ferramenta de linha de comando para execução de containers, sendo uma alternativa ao docker, mas quais são suas principais características?&lt;/p&gt;
 &lt;ul&gt;
@@ -229,10 +229,10 @@ a instalação de um cluster Kubernetes local.&lt;/p&gt;
     
     <item>
     <title>Restoring AMI with Packer</title>
-    <link>https://example.com/posts/2022-03-30-restoring/</link>
+    <link>https://sergsoares.github.io/posts/2022-03-30-restoring/</link>
     <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-03-30-restoring/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-03-30-restoring/</guid>
     <description>
         &lt;p&gt;We have several options to discover an AMI id to use in infra as code resources, but with &lt;a href=&#34;https://www.packer.io/&#34;&gt;Packer from Hashicorp&lt;/a&gt; it is simple as define a block that will recover based on a pattern the id.&lt;/p&gt;
 &lt;p&gt;Above the solution using filter to restore latest image id for a ubuntu 20.04 version.&lt;/p&gt;
@@ -292,10 +292,10 @@ a instalação de um cluster Kubernetes local.&lt;/p&gt;
     
     <item>
     <title>More digital products, more security assets</title>
-    <link>https://example.com/posts/2022-03-15-more-digital-products-more-security-assets/</link>
+    <link>https://sergsoares.github.io/posts/2022-03-15-more-digital-products-more-security-assets/</link>
     <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-03-15-more-digital-products-more-security-assets/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-03-15-more-digital-products-more-security-assets/</guid>
     <description>
         &lt;p&gt;Today with digital products that interact in our day to day increasing the number of security assets that we need to manage is increasing too (password, key files, 2FA components).&lt;/p&gt;
 &lt;p&gt;And if you are part of a critical infrastructure role or you have ownership inside a company, there are more items and in some cases more critical.&lt;/p&gt;
@@ -317,10 +317,10 @@ a instalação de um cluster Kubernetes local.&lt;/p&gt;
     
     <item>
     <title>Technical blogs for SRE/Infra</title>
-    <link>https://example.com/posts/2022-03-11-technical-blogs-for-sre-infra/</link>
+    <link>https://sergsoares.github.io/posts/2022-03-11-technical-blogs-for-sre-infra/</link>
     <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-03-11-technical-blogs-for-sre-infra/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-03-11-technical-blogs-for-sre-infra/</guid>
     <description>
         &lt;p&gt;A list of great technical blogs of companies and organizations that write about sre, kubernetes and other infrastructure topics, it will be updated.&lt;/p&gt;
 &lt;ul&gt;
@@ -347,10 +347,10 @@ a instalação de um cluster Kubernetes local.&lt;/p&gt;
     
     <item>
     <title>More experience give us less certainties</title>
-    <link>https://example.com/posts/2022-03-02-more-experience-give-us-less-certainties/</link>
+    <link>https://sergsoares.github.io/posts/2022-03-02-more-experience-give-us-less-certainties/</link>
     <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-03-02-more-experience-give-us-less-certainties/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-03-02-more-experience-give-us-less-certainties/</guid>
     <description>
         &lt;p&gt;As become experienced we start discuss and dialogue with ourself about methodologies and practices.&lt;/p&gt;
 &lt;p&gt;What we learn touch the reality but with several new and not expected variables, that makes us rethink based on that specific use case.&lt;/p&gt;
@@ -361,10 +361,10 @@ a instalação de um cluster Kubernetes local.&lt;/p&gt;
     
     <item>
     <title>Best generic folder for linux apps</title>
-    <link>https://example.com/posts/2022-03-01-best-generic-folder-for-linux-apps/</link>
+    <link>https://sergsoares.github.io/posts/2022-03-01-best-generic-folder-for-linux-apps/</link>
     <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-03-01-best-generic-folder-for-linux-apps/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-03-01-best-generic-folder-for-linux-apps/</guid>
     <description>
         &lt;p&gt;Each distro in linux can have different paths for install applications, but a good generic option seems:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/opt/&amp;lt;app_folder&amp;gt;/&amp;lt;executable&amp;gt;
@@ -377,10 +377,10 @@ a instalação de um cluster Kubernetes local.&lt;/p&gt;
     
     <item>
     <title>Solved issues are great in open source terraform</title>
-    <link>https://example.com/posts/2022-03-01-solved-issues-are-great-in-open-source/</link>
+    <link>https://sergsoares.github.io/posts/2022-03-01-solved-issues-are-great-in-open-source/</link>
     <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2022-03-01-solved-issues-are-great-in-open-source/</guid>
+    <guid>https://sergsoares.github.io/posts/2022-03-01-solved-issues-are-great-in-open-source/</guid>
     <description>
         &lt;h2 id=&#34;test&#34;&gt;
     &lt;a href=&#34;#test&#34; class=&#34;anchor&#34;&gt;
@@ -408,10 +408,10 @@ panic: interface conversion: interface {} is nil, not *conns.AWSClient
     
     <item>
     <title>Como utilizar docker como ambiente de trabalho</title>
-    <link>https://example.com/posts/2020-04-26-example-post-3/</link>
+    <link>https://sergsoares.github.io/posts/2020-04-26-example-post-3/</link>
     <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2020-04-26-example-post-3/</guid>
+    <guid>https://sergsoares.github.io/posts/2020-04-26-example-post-3/</guid>
     <description>
         &lt;p&gt;Sempre achei interessante a ideia de rodar aplicações gráficas utilizando container e poder facilitar a replicação delas em diferentes locais.&lt;/p&gt;
 &lt;p&gt;Pesquisando anos atrás formas de utilizar o docker para esse fim vi posts excelentes como do &lt;a href=&#34;http://somatorio.org/pt-br/post/rodando-aplicacoes-gui-em-docker/&#34;&gt;Somatório - Rodando aplicações GUI em Docker&lt;/a&gt; e da &lt;a href=&#34;https://blog.jessfraz.com/post/docker-containers-on-the-desktop/&#34;&gt;Jessie - Docker Containers on the Desktop&lt;/a&gt;.&lt;/p&gt;
@@ -429,10 +429,10 @@ panic: interface conversion: interface {} is nil, not *conns.AWSClient
     
     <item>
     <title>Doing exposes reality</title>
-    <link>https://example.com/posts/2020-04-26-example-post-2/</link>
+    <link>https://sergsoares.github.io/posts/2020-04-26-example-post-2/</link>
     <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
     
-    <guid>https://example.com/posts/2020-04-26-example-post-2/</guid>
+    <guid>https://sergsoares.github.io/posts/2020-04-26-example-post-2/</guid>
     <description>
         &lt;p&gt;Keep an personal blog is common in IT but beyond expose yourself to others and increase your visibility it improve our write skills, tecnical learning and help others with tips/insights.&lt;/p&gt;
 &lt;p&gt;In a past i already try write with frequency but fall in the side-project trap:&lt;/p&gt;
@@ -449,10 +449,10 @@ panic: interface conversion: interface {} is nil, not *conns.AWSClient
     
     <item>
     <title>Example Lazy Load Image</title>
-    <link>https://example.com/posts/example-load/</link>
+    <link>https://sergsoares.github.io/posts/example-load/</link>
     <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
     <author>Hugo Authors</author>
-    <guid>https://example.com/posts/example-load/</guid>
+    <guid>https://sergsoares.github.io/posts/example-load/</guid>
     <description>
         &lt;h2 id=&#34;nya-nya-nyan-meow-meow-mama&#34;&gt;
     &lt;a href=&#34;#nya-nya-nyan-meow-meow-mama&#34; class=&#34;anchor&#34;&gt;

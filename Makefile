@@ -2,4 +2,4 @@ run:
 	hugo server --disableFastRender
 
 create-%:
-	hugo new posts/converting-wordpress-to-markdown.md
+	hugo new posts/installing-binaries.md
