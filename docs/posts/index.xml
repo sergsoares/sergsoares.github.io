@@ -167,7 +167,8 @@ It lead us to change ideas, plans and decisions because we then learn that neith
       <guid>https://sergsoares.github.io/posts/2022-03-01-solved-issues-are-great-in-open-source/</guid>
       <description>Test Errors be part of our day work at tech, but working with open source facilitate a lot, tools like terraform show us that community has power.
 At work today received the below error in a &amp;ldquo;terraform plan&amp;rdquo;:
-Stack trace from the terraform-provider-aws_v3.74.0_x5 plugin: panic: interface conversion: interface {} is nil, not *conns.AWSClient And with a fast search I found a Github Issue in Terraform recommending update Terraform version.</description>
+Stack trace from the terraform-provider-aws_v3.74.0_x5 plugin: panic: interface conversion: interface {} is nil, not *conns.AWSClient And with a fast search I found a Github Issue in Terraform recommending update Terraform version.
+Errors are not cool, but solved issues are.</description>
     </item>
     
     <item>
@@ -191,15 +192,6 @@ Entretanto esses cenários são para aplicações específicas, não para o ambi
 In a past i already try write with frequency but fall in the side-project trap:
 The main points to avoid fall in this trap again:
 Keep blog simple and focus in content Small and simple posts to gain cadency Talk about work insights and problems solved Trying again this habit, using Hugo a static generator really fast made in Go and starting from Minimal template created by Lukas Joswiak.</description>
-    </item>
-    
-    <item>
-      <title>Example Lazy Load Image</title>
-      <link>https://sergsoares.github.io/posts/example-load/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://sergsoares.github.io/posts/example-load/</guid>
-      <description>Nya nya nyan meow meow mama More napping, more napping all the napping is exhausting stretch out on bed you are a captive audience while sitting on the toilet, pet me slap the dog because cats rule bleghbleghvomit my furball really tie the room together always hungry. Humans,humans, humans oh how much they love us felines we are the center of attention they feed, they clean miaow then turn around and show you my bum.</description>
     </item>
     
   </channel>
