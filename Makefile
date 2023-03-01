@@ -12,6 +12,6 @@ lazycommit:
 	git commit -m "Updated articles"
 
 push:
-	git push origin master
+	git push
 
 publish: build lazycommit push
