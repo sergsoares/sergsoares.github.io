@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>learn on Sergsoares</title>
-    <link>https://example.com/categories/learn/</link>
+    <link>https://sergsoares.github.io/categories/learn/</link>
     <description>Recent content in learn on Sergsoares</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/learn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sergsoares.github.io/categories/learn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploration and try new ideas are a awesome way to learn</title>
-      <link>https://example.com/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</link>
+      <link>https://sergsoares.github.io/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</link>
       <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</guid>
+      <guid>https://sergsoares.github.io/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/</guid>
       <description>Looking at Hacker news, i saw a post call my attention.
 I rewrote in Crystal my tool to quickly create Kubernetes clusters in Hetzner
 And it called my attention for several factors:

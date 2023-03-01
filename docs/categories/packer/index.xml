@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>packer on Sergsoares</title>
-    <link>https://example.com/categories/packer/</link>
+    <link>https://sergsoares.github.io/categories/packer/</link>
     <description>Recent content in packer on Sergsoares</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/packer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sergsoares.github.io/categories/packer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Restoring AMI with Packer</title>
-      <link>https://example.com/posts/2022-03-30-restoring/</link>
+      <link>https://sergsoares.github.io/posts/2022-03-30-restoring/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/posts/2022-03-30-restoring/</guid>
+      <guid>https://sergsoares.github.io/posts/2022-03-30-restoring/</guid>
       <description>We have several options to discover an AMI id to use in infra as code resources, but with Packer from Hashicorp it is simple as define a block that will recover based on a pattern the id.
 Above the solution using filter to restore latest image id for a ubuntu 20.04 version.
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 source &amp;#34;amazon-ebs&amp;#34; &amp;#34;ubuntu&amp;#34; { ami_name = &amp;#34;azure-agent-image-v0.</description>

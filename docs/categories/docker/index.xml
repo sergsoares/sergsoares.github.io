@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>docker on Sergsoares</title>
-    <link>https://example.com/categories/docker/</link>
+    <link>https://sergsoares.github.io/categories/docker/</link>
     <description>Recent content in docker on Sergsoares</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://sergsoares.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Como utilizar docker como ambiente de trabalho</title>
-      <link>https://example.com/posts/2020-04-26-example-post-3/</link>
+      <link>https://sergsoares.github.io/posts/2020-04-26-example-post-3/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/posts/2020-04-26-example-post-3/</guid>
+      <guid>https://sergsoares.github.io/posts/2020-04-26-example-post-3/</guid>
       <description>Sempre achei interessante a ideia de rodar aplicações gráficas utilizando container e poder facilitar a replicação delas em diferentes locais.
 Pesquisando anos atrás formas de utilizar o docker para esse fim vi posts excelentes como do Somatório - Rodando aplicações GUI em Docker e da Jessie - Docker Containers on the Desktop.
 Entretanto esses cenários são para aplicações específicas, não para o ambiente de trabalho inteiro, recentemente pesquisando formas criar um home lab privado e implicações de segurança pensei em criar uma VM com interface gráfica na cloud:</description>

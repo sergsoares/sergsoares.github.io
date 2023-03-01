@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>podman on Sergsoares</title>
-    <link>https://example.com/categories/podman/</link>
+    <link>https://sergsoares.github.io/categories/podman/</link>
     <description>Recent content in podman on Sergsoares</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/podman/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sergsoares.github.io/categories/podman/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Por que usar o podman se temos o Docker ?</title>
-      <link>https://example.com/posts/2022-08-03-por-que-usar-o-podman-se-temos-o-docker/</link>
+      <link>https://sergsoares.github.io/posts/2022-08-03-por-que-usar-o-podman-se-temos-o-docker/</link>
       <pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/posts/2022-08-03-por-que-usar-o-podman-se-temos-o-docker/</guid>
+      <guid>https://sergsoares.github.io/posts/2022-08-03-por-que-usar-o-podman-se-temos-o-docker/</guid>
       <description>O Podman é uma ferramenta de linha de comando para execução de containers, sendo uma alternativa ao docker, mas quais são suas principais características?
 Daemonless - O Docker é uma ferramenta que precisa ser instalada com privilégios de usuário root, enquanto o podman por ser daemonless não precisa desses mesmos privilégios facilitando o seu uso.
 Rootless - O podman aplica o conceito de rootless para a execução dos seus containers reduzindo a superfície de ataque através de um container infectado ao host, atualmente já temos o suporte no docker nas novas versões.</description>

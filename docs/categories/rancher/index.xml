@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rancher on Sergsoares</title>
-    <link>https://example.com/categories/rancher/</link>
+    <link>https://sergsoares.github.io/categories/rancher/</link>
     <description>Recent content in rancher on Sergsoares</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/rancher/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sergsoares.github.io/categories/rancher/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>O que é o Rancher Desktop ?</title>
-      <link>https://example.com/posts/2022-08-05-o-que-e-o-rancher-desktop/</link>
+      <link>https://sergsoares.github.io/posts/2022-08-05-o-que-e-o-rancher-desktop/</link>
       <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/posts/2022-08-05-o-que-e-o-rancher-desktop/</guid>
+      <guid>https://sergsoares.github.io/posts/2022-08-05-o-que-e-o-rancher-desktop/</guid>
       <description>O Rancher Desktop é uma aplicação multiplataforma feita pela SUSE que fornece mecanismos para gestão de containers e uma interface gráfica para
 a instalação de um cluster Kubernetes local.
 As principais facilidades de utilizar o Rancher Desktop:
