@@ -1,8 +1,8 @@
-build:
-	hugo
-
 run:
 	hugo server --disableFastRender
+
+build:
+	hugo
 
 create-%:
 	hugo new posts/installing-binaries.md
