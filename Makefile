@@ -12,6 +12,6 @@ lazycommit:
 	git commit -m "Updated articles"
 
 push:
-	git push
+	git push origin gh-pages
 
 publish: build lazycommit push
