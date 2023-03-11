@@ -1,6 +1,6 @@
 ---
 title: "Install Docker Azure Pipelines"
-date: 2023-03-11T13:39:51-03:00
+date: "2023-03-11"
 categories: 
 - azure-devops
 ---

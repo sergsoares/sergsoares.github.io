@@ -6,11 +6,11 @@
     <description>Recent content in azure-devops on Sergsoares</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Mar 2023 13:39:51 -0300</lastBuildDate><atom:link href="https://sergsoares.github.io/categories/azure-devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sergsoares.github.io/categories/azure-devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install Docker Azure Pipelines</title>
       <link>https://sergsoares.github.io/posts/install-docker-azure-pipelines/</link>
-      <pubDate>Sat, 11 Mar 2023 13:39:51 -0300</pubDate>
+      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sergsoares.github.io/posts/install-docker-azure-pipelines/</guid>
       <description>Install Docker inside Amazon Linux inside Azure Pipelines Below is a simple step that verifies if docker exists validating existence of docker.service, if not it installs.
