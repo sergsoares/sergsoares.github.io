@@ -1,11 +1,9 @@
 ---
-title: "Install Docker Azure Pipelines"
+title: "Install Docker inside Amazon Linux inside Azure Pipelines"
 date: "2023-03-11"
 categories: 
 - azure-devops
 ---
-
-# Install Docker inside Amazon Linux inside Azure Pipelines
 
 Below is a simple step that verifies if docker exists validating existence of **docker.service**, if not it installs.
 

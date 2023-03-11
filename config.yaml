@@ -67,8 +67,8 @@ menu:
   header:
     - name: Articles
       url: "/articles/"
-  #   - name: About
-  #     url: "/blog/"
+    # - name: About
+    #   url: "/blog/"
   # footer:
   #   - name: RSS
   #     url: "/index.xml"

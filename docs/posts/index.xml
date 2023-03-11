@@ -8,13 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sergsoares.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Install Docker Azure Pipelines</title>
+      <title>Install Docker inside Amazon Linux inside Azure Pipelines</title>
       <link>https://sergsoares.github.io/posts/install-docker-azure-pipelines/</link>
       <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://sergsoares.github.io/posts/install-docker-azure-pipelines/</guid>
-      <description>Install Docker inside Amazon Linux inside Azure Pipelines Below is a simple step that verifies if docker exists validating existence of docker.service, if not it installs.
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 steps: - script: | if systemctl --all --type service | grep -Fq &amp;#39;docker&amp;#39;; then echo &amp;#34;docker.service exists&amp;#34; else sudo yum install --assumeyes docker sudo usermod -a -G docker ec2-user sudo systemctl enable docker.</description>
+      <description>Below is a simple step that verifies if docker exists validating existence of docker.service, if not it installs.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 steps: - script: | if systemctl --all --type service | grep -Fq &amp;#39;docker&amp;#39;; then echo &amp;#34;docker.service exists&amp;#34; else sudo yum install --assumeyes docker sudo usermod -a -G docker ec2-user sudo systemctl enable docker.service sudo systemctl start docker.service sudo systemctl status docker.</description>
     </item>
     
     <item>
