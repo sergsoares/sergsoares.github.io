@@ -15,3 +15,7 @@ push:
 	git push origin gh-pages
 
 publish: build lazycommit push
+
+submodule:
+	git submodule init
+	git submodule update

@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="dark">
-    <title>A good start template for Makefile | Sergsoares</title>
+    <title>Install Docker Azure Pipelines | Sergsoares</title>
 
     
     
     
     <meta property="og:site_name" content="Sergsoares" />
-    <meta property="og:title" content="A good start template for Makefile | Sergsoares"/>
-    <meta itemprop="name" content="A good start template for Makefile | Sergsoares" />
-    <meta name="twitter:title" content="A good start template for Makefile | Sergsoares" />
-    <meta name="application-name" content="A good start template for Makefile | Sergsoares" /><meta name="twitter:card" content="summary"/>
+    <meta property="og:title" content="Install Docker Azure Pipelines | Sergsoares"/>
+    <meta itemprop="name" content="Install Docker Azure Pipelines | Sergsoares" />
+    <meta name="twitter:title" content="Install Docker Azure Pipelines | Sergsoares" />
+    <meta name="application-name" content="Install Docker Azure Pipelines | Sergsoares" /><meta name="twitter:card" content="summary"/>
 
     <meta name="description" content="Sergsoares" />
     <meta name="twitter:description" content="Sergsoares"/>
@@ -90,14 +90,14 @@
         <header class="article-header">
             <div class="thumb">
                 <div>
-                    <h1>A good start template for Makefile</h1>
+                    <h1>Install Docker Azure Pipelines</h1>
                     <div class="post-meta">
                         <div>
                             
                             
                               
                             
-                            By Sergsoares | <time>January 31, 2023</time>
+                            By Sergsoares | <time>March 11, 2023</time>
                             | 1 minutes
                         </div>
                         <div class="tags">
@@ -110,7 +110,17 @@
     </article>
 
     <div class="article-post">
-    <p>It is a simple template that i use frequently to initiate projects with Makefile.</p>
+    <h1 id="install-docker-inside-amazon-linux-inside-azure-pipelines">
+    <a href="#install-docker-inside-amazon-linux-inside-azure-pipelines" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    Install Docker inside Amazon Linux inside Azure Pipelines
+</h1>
+<p>Below is a simple step that verifies if docker exists validating existence of <strong>docker.service</strong>, if not it installs.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -126,30 +136,26 @@
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
+</span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">help</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c"># Show this help.
-</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nf">help</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    @awk <span class="s1">&#39;/^#/{c=substr($$0,3);next}c&amp;&amp;/^\[\[:alpha:\]\]\[\[:alnum:\]\_-\]+:/{print substr($$1,1,index($$1,&#34;:&#34;)),c}1{c=0}&#39;</span> <span class="k">$(</span>MAKEFILE<span class="se">\_</span>LIST<span class="k">)</span> <span class="p">|</span> column -s: -t
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c"># Turn on docker-compose environment.
-</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nf">up</span><span class="o">:</span> 
-</span></span><span class="line"><span class="cl">    @docker-compose up -d
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c"># Turn on docker-compose environment.
-</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="nf">down</span><span class="o">:</span> 
-</span></span><span class="line"><span class="cl">    @docker-compose down -d
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="cl"><span class="sd">    if systemctl --all --type service | grep -Fq &#39;docker&#39;; then    
+</span></span></span><span class="line"><span class="cl"><span class="sd">      echo &#34;docker.service exists&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sd">    else
+</span></span></span><span class="line"><span class="cl"><span class="sd">      sudo yum install --assumeyes docker
+</span></span></span><span class="line"><span class="cl"><span class="sd">      sudo usermod -a -G docker ec2-user
+</span></span></span><span class="line"><span class="cl"><span class="sd">      sudo systemctl enable docker.service
+</span></span></span><span class="line"><span class="cl"><span class="sd">      sudo systemctl start docker.service
+</span></span></span><span class="line"><span class="cl"><span class="sd">      sudo systemctl status docker.service --no-pager
+</span></span></span><span class="line"><span class="cl"><span class="sd">      docker version
+</span></span></span><span class="line"><span class="cl"><span class="sd">      echo &#34;Docker Installed&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sd">    fi</span><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l">Install docker</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>It use a help recipe in Make that process the comments on top of each task, providing descriptions for tasks and allowing discovery from other that use the project.</p>
-<p>Then when some run make inside the project, will generate the following output:</p>
-<pre tabindex="0"><code>$ make
-help   Show this help.
-up     Turn on docker-compose environment.
-down   Turn on docker-compose environment
-</code></pre>
+</div>
     </div>
 </div>
 
@@ -157,17 +163,12 @@ down   Turn on docker-compose environment
     
     <nav class="flex container suggested">
         
-        <a rel="prev" href="/posts/2022-12-31-exploration-and-try-new-ideas-are-a-awesome-way-to-learn/" title="Previous post (older)">
+        <a rel="prev" href="/posts/2023-01-31-a-good-start-template-for-makefile/" title="Previous post (older)">
             <span>Previous</span>
-            Exploration and try new ideas are a awesome way to learn
+            A good start template for Makefile
             </a>
         
         
-        
-        <a rel="next" href="/posts/install-docker-azure-pipelines/" title="Next post (newer)">
-            <span>Next</span>
-            Install Docker Azure Pipelines
-            </a> 
         
     </nav>
     
