@@ -8,7 +8,7 @@ date: 2023-03-12T03:14:03.684Z
 ---
 Imagine the scenario, we want to create multiple S3 buckets using the Cloudformation block below:
 
-```
+```yaml
 # template.yml
 Resources:
   S3Bucket:
@@ -28,7 +28,7 @@ $﻿ pip3 install jinja2-cli
 
 Now is possible to create a jinja2 template with a parametrized name variable following [Jinja2 Syntax](https://jinja.palletsprojects.com/en/3.1.x/templates/):
 
-```
+```j2
 # template.j2
 Resources:
   S3Bucket:
@@ -40,7 +40,7 @@ Resources:
 
 And with our dependencies installed, we can execute it to render the template.
 
-```
+```bash
 $ jinja2 template.j2 -D name=my-api-bucket
 ```
 
@@ -61,8 +61,8 @@ The output was a rendered template with my-api-bucket, But if we want to create 
 
 And create a jinja2 template with a for loop to iterate through the list creating an S3 block for each name:
 
-```
-# 
+```j2
+# template.j2
 {% for item in names %}
 Resources:
   S3Bucket:
@@ -75,13 +75,13 @@ Resources:
 
 Below is the command to render the template passing a JSON file with variables:
 
-```
-$ cat names.json | jinja2 parametrized.j2 
+```bash
+$ cat names.json | jinja2 template.j2 
 ```
 
 With that, we can receive the output for our final manifest.
 
-```
+```yaml
 Resources:
   S3Bucket:
     Type: 'AWS::S3::Bucket'
