@@ -28,7 +28,7 @@ $﻿ pip3 install jinja2-cli
 
 Now is possible to create a jinja2 template with a parametrized name variable following [Jinja2 Syntax](https://jinja.palletsprojects.com/en/3.1.x/templates/):
 
-```j2
+```yaml
 # template.j2
 Resources:
   S3Bucket:
@@ -61,7 +61,7 @@ The output was a rendered template with my-api-bucket, But if we want to create 
 
 And create a jinja2 template with a for loop to iterate through the list creating an S3 block for each name:
 
-```j2
+```jinja
 # template.j2
 {% for item in names %}
 Resources:
