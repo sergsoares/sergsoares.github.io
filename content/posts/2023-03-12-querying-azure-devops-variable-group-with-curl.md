@@ -2,7 +2,7 @@
 title: Querying Azure DevOps Variable group with Curl
 date: 2023-03-12T00:09:45.712Z
 description: azure-devops
-draft: true
+draft: false
 categories:
   - azure-devops
 ---
