@@ -63,9 +63,9 @@ And create a jinja2 template with a for loop to iterate through the list creatin
 
 ```jinja
 # template.j2
-{% for item in names %}
 Resources:
-  S3Bucket:
+{% for item in names %}
+  {{ item }}:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
@@ -83,35 +83,32 @@ With that, we can receive the output for our final manifest.
 
 ```yaml
 Resources:
-  S3Bucket:
+
+  backend-s3:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
       BucketName: backend-s3
 
-Resources:
-  S3Bucket:
+  nextjs:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
       BucketName: nextjs
 
-Resources:
-  S3Bucket:
+  landpage:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
       BucketName: landpage
 
-Resources:
-  S3Bucket:
+  blog:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
       BucketName: blog
 
-Resources:
-  S3Bucket:
+  reports:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
