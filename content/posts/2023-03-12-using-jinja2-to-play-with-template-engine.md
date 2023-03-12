@@ -28,7 +28,7 @@ $﻿ pip3 install jinja2-cli
 
 Now is possible to create a jinja2 template with a parametrized name variable following [Jinja2 Syntax](https://jinja.palletsprojects.com/en/3.1.x/templates/):
 
-```yaml
+```jinja
 # template.j2
 Resources:
   S3Bucket:
