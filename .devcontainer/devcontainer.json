@@ -1,16 +1,23 @@
 {
-  "name": "minimal-k8s",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",  // Any generic, debian-based image.
-  "features": {
-      "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-      "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {}
-
-  }, 
+  "name": "Sergsoares Blog",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "files.defaultLanguage": "markdown"
   },
+
   "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
     "editorconfig.editorconfig",
-    "redhat.vscode-yaml"
-  ]
+    "streetsidesoftware.code-spell-checker"
+  ],
+
+  "forwardPorts": [1313],
+
+  "features": {
+    "ghcr.io/devcontainers/features/hugo:1": {
+        "extended": true
+    }
+  }
 }
