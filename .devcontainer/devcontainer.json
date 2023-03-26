@@ -1,0 +1,16 @@
+{
+  "name": "minimal-k8s",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",  // Any generic, debian-based image.
+  "features": {
+      "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+      "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {}
+
+  }, 
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "editorconfig.editorconfig",
+    "redhat.vscode-yaml"
+  ]
+}
