@@ -1,6 +1,6 @@
 ---
 title: A trick snippet for easy Terraform target apply
-draft: true
+draft: false
 categories:
   - terraform
 date: 2023-05-16T23:55:17.755Z
