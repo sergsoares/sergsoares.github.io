@@ -1,5 +1,5 @@
 ---
-title: Create a Kind cluster in remote host with Terraform
+title: Create a Kind cluster in a remote host with Terraform
 draft: false
 categories:
   - kind
