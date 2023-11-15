@@ -126,8 +126,10 @@ sudo sshuttle --dns -NHr <SERVER_USER>@<SERVER_IP> <CIDR>
 ```
 
 Example using the ephemeral droplet that I created (Connected to server means success):
-```
-sergsoares-personal ~> sudo sshuttle --dns -NHr root@164.90.157.217 10.254.155.0/24Password:
+
+```shell
+sergsoares-personal ~> sudo sshuttle --dns -NHr root@164.90.157.217 10.254.155.0/24
+Password:
 The authenticity of host '164.90.157.217 (164.90.157.217)' can't be established.
 ED25519 key fingerprint is SHA256:jWmcSw1VHy/dMGQret7ewcaKlyMIixnLRbCGlJIGPlU.
 This key is not known by any other names
