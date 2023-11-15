@@ -1,6 +1,6 @@
 ---
 title: Create a private cloud inside a VPS (Proxmox alternative)
-draft: true
+draft: false
 categories:
   - lxd
   - vps
@@ -17,24 +17,31 @@ For those who, like me, want to create and destroy a lot of VMs that are used fo
 Requirements:
 - VM with support for KVM
 - 4GB or more of RAM 
-- Debian 12
+- Debian 12 (OS that will be used)
 
 Glossary:
 
-- host (your actual desktop)
-- server (where we will run the lxd daemon)
-- vm (a Virtual Machine create with LXD)
+- VM (a virtual machine created by LXD)
+- server (where we will run the LXD daemon)
+- local (computer that will be used to SSH inside server)
+- LXD (is the daemon of LinuX Containers)
+- LXC (is the command line for manage LinuX Containers Daemon)
 
-Create a VPS of your choice with support for KVM, I will use Debian 12 in digital ocean then ssh in it:
 
-1) Check that KVM is working:
+### Prepare the server
+
+Create a VPS (or use a bare metal server) of your choice, I will use a droplet in Digital Ocean with Debian 12.
+
+Then ssh in it.
+
+### Check that KVM is working:
 
 ```shell
-apt update
-apt install -y cpu-checker
+root@debian-s-2vcpu-4gb-sfo3-01:~# apt update
+root@debian-s-2vcpu-4gb-sfo3-01:~# apt install -y cpu-checker
 ```
 
-Then using kvm-ok we can validate if VM or host support KVM:
+Then using kvm-ok we can validate if server support KVM:
 
 ```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# kvm-ok
@@ -42,17 +49,17 @@ INFO: /dev/kvm exists
 KVM acceleration can be used
 ```
 
-2) Install main components
+### Install components for lxd and virtualization
 
+```shell
+root@debian-s-2vcpu-4gb-sfo3-01:~# apt install --no-install-recommends -y lxd qemu-system qemu-system-x86 bridge-utils ovmf
 ```
-apt install --no-install-recommends -y lxd qemu-system qemu-system-x86 bridge-utils ovmf
-```
 
-3) Initialize with lxd init
+### Initialize lxd server
 
-It will create mainly configuraiton for use LXD
+Initialize lxd server, we will use all default configuration in that step.
 
-```
+```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# lxd init
 Would you like to use LXD clustering? (yes/no) [default=no]: 
 Do you want to configure a new storage pool? (yes/no) [default=yes]: 
@@ -67,7 +74,7 @@ Would you like stale cached images to be updated automatically? (yes/no) [defaul
 Would you like a YAML "lxd init" preseed to be printed? (yes/no) [default=no]:
 ```
 
-4) Run first LXC VM
+### Run the first LXC VM to validate that it is working
 
 ```
 root@debian-s-2vcpu-4gb-sfo3-01:~# lxc launch images:ubuntu/22.04/cloud vm01 --vm
@@ -80,22 +87,22 @@ Starting vm01
 ```
 
 
-5) Install lxdware (will use a docker running inside a little VM)
+### Install LXDware
 
-https://lxdware.com/
+Let's install [LXDware](https://lxdware.com) using a docker running inside a little VM.
 
 Create an instance for lxdware run:
 ```
 $ lxc launch images:ubuntu/22.04/cloud lxdware --vm --config limits.memory=512MiB --config limits.cpu=1
 ```
 
-Install docker dependency
+#### Install docker dependency
 ```
 root@debian-s-2vcpu-4gb-sfo3-01:~# lxc shell lxdware
 root@lxdware:~# apt update && apt install -y docker.io
 ```
 
-Create a container for lxdware:
+#### Create a container for lxdware:
 
 ```shell
 root@lxdware:~# docker run -d --name dashboard -p 8000:80 -v ~/lxdware:/var/lxdware --restart=always lxdware/dashboard:3.8.0
@@ -104,7 +111,7 @@ root@lxdware:~# docker run -d --name dashboard -p 8000:80 -v ~/lxdware:/var/lxdw
 root@lxdware:~# docker ps
 ```
 
-6) Access the VM's like a local network 
+### Access the VM's like a local network 
 
 For we will use https://github.com/sshuttle/sshuttle that allow we forward a CIDR acting like we are inside our host and access through secure SSH connection.
 
@@ -131,7 +138,7 @@ c : Connected to server.
 HH: ['netstat', '-n'] failed: FileNotFoundError(2, 'No such file or directory')
 ```
 
-Now lets discover inside server the IP for lxdware vm
+Now lets discover inside server the IP for LXDware vm
 
 ```
 root@debian-s-2vcpu-4gb-sfo3-01:~# lxc list
@@ -147,12 +154,11 @@ root@debian-s-2vcpu-4gb-sfo3-01:~# lxc list
 
 And with the IP and the sshuttle tunnel we can access, in our case http://10.254.155.66:8000/
 
+### Configure LXDware:
 
-7) Configure lxdware:
+After access LXDware and configuring a new app:
 
-
-
-It need be executed inside server create the file, :
+For allowing LXDware to manage LXD server, we need to add the LXDware certificate to LXDServer with the following procedures
 
 ```
 root@debian-s-2vcpu-4gb-sfo3-01:~# cat << EOF > lxdware.crt
@@ -177,30 +183,25 @@ root@debian-s-2vcpu-4gb-sfo3-01:~#  lxc config trust add lxdware.crt
 root@debian-s-2vcpu-4gb-sfo3-01:~#  lxc config set core.https_address [::] 
 ```
 
-
 With the certificate alloweb by lxd server, we can connect from lxdware inside lxd server:
 
 
+### Troubleshooting
 
+If when try to launch a VM you receive an error, check again the procedure to install dependencies and look for LXD logs
 
-
-
-
-
-
-Errors:
-
-For found detailed logs:
 ```
-cat /var/log/lxd/lxd.log
+# Validating the logs from journal
+$ journalctl -u lxd.service
+
+# Or looking for logs in lxd.log
+$ cat /var/log/lxd/lxd.log
 ```
 
-If when try to launch a VM you receive a error like that, check again the procedure to install dependencies
-```
-Error: Failed instance creation: Failed creating instance record: Instance type "virtual-machine" is not supported on this server: QEMU command not available for CPU architecture
-```
+### References
 
-https://lxdware.com/installing-the-lxd-dashboard-using-the-docker-image/
-https://documentation.ubuntu.com/lxd/en/latest/installing/
-https://www.cyberciti.biz/faq/install-lxd-on-ubuntu-22-04-lts-using-apt-snap/
-https://wiki.debian.org/LXD
+- [https://lxdware.com/installing-the-lxd-dashboard-using-the-docker-image/](https://lxdware.com/installing-the-lxd-dashboard-using-the-docker-image/)
+- [https://documentation.ubuntu.com/lxd/en/latest/installing/](https://documentation.ubuntu.com/lxd/en/latest/installing/)
+- [https://www.cyberciti.biz/faq/install-lxd-on-ubuntu-22-04-lts-using-apt-snap/](https://www.cyberciti.biz/faq/install-lxd-on-ubuntu-22-04-lts-using-apt-snap/)
+- [https://wiki.debian.org/LXD](https://wiki.debian.org/LXD)
+
