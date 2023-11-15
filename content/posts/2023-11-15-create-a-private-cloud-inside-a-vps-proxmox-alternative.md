@@ -157,19 +157,19 @@ And with the IP and the sshuttle tunnel we can access, in our case http://10.254
 
 After access LXDware and create a user and password and made the login:
 
-![](docs/images/lxd-registration.png)
+![](images/lxd-registration.png)
 
 And the main console will appear:
 
-![](docs/images/dash.png)
+![](images/dash.png)
 
 Now let's add a new host for LXDware, and click in "here" link:
 
-![](docs/images/add-host-detail.png)
+![](images/add-host-detail.png)
 
 Now for allowing LXDware to manage LXD server, we need to add the LXDware certificate to LXDServer that will be provided in the next screen:
 
-![](docs/images/add-lxdware-crt.png)
+![](images/add-lxdware-crt.png)
 
 For example, It can be done with the following commands (substitute the .crt content or create lxdware.crt by hand).
 
@@ -198,15 +198,15 @@ root@debian-s-2vcpu-4gb-sfo3-01:~#  lxc config set core.https_address [::]
 
 With the certificate allowed, we can connect from lxdware console inside lxd server using the IP of the server:
 
-![](docs/images/add-with-ip.png)
+![](images/add-with-ip.png)
 
-![](docs/images/dash-with-access.png)
+![](images/dash-with-access.png)
 
 Now we can access virtual machines inside the host created host
 
-![](docs/images/dash-virtual-machines.png)
+![](images/dash-virtual-machines.png)
 
-![](docs/images/lxdware-vm.png)
+![](images/lxdware-vm.png)
 
 
 ### Troubleshooting
