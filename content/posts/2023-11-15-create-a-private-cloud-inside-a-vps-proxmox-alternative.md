@@ -76,7 +76,7 @@ Would you like a YAML "lxd init" preseed to be printed? (yes/no) [default=no]:
 
 ### Run the first LXC VM to validate that it is working
 
-```
+```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# lxc launch images:ubuntu/22.04/cloud vm01 --vm
 If this is your first time running LXD on this machine, you should also run: lxd init
 
@@ -91,18 +91,20 @@ Starting vm01
 
 Let's install [LXDware](https://lxdware.com) using a docker running inside a little VM.
 
-Create an instance for lxdware run:
-```
+Create an instance for lxdware run
+
+```shell
 $ lxc launch images:ubuntu/22.04/cloud lxdware --vm --config limits.memory=512MiB --config limits.cpu=1
 ```
 
 #### Install docker dependency
-```
+
+```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# lxc shell lxdware
 root@lxdware:~# apt update && apt install -y docker.io
 ```
 
-#### Create a container for lxdware:
+#### Create a container for LXDware:
 
 ```shell
 root@lxdware:~# docker run -d --name dashboard -p 8000:80 -v ~/lxdware:/var/lxdware --restart=always lxdware/dashboard:3.8.0
@@ -113,20 +115,22 @@ root@lxdware:~# docker ps
 
 ### Access the VM's like a local network 
 
-For we will use https://github.com/sshuttle/sshuttle that allow we forward a CIDR acting like we are inside our host and access through secure SSH connection.
+For that, we will use [sshuttle](https://github.com/sshuttle/sshuttle) that allow we to forward a CIDR acting like we are inside our host and access through secure SSH connection.
 
 Lets discover which is the CIDR inside the server that host has access that we want access (if you changed default bridge change inside script):
-```
+
+```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# ip route | grep lxdbr0 | awk '{print $1}'
 10.254.155.0/24
 ```
 
-With the cidr we will create a command to forward traffic from our host to vm (passing by the server):
+With the CIDR we will create a command to forward traffic from our host to vm (passing by the server):
 
+```
 sudo sshuttle --dns -NHr <SERVER_USER>@<SERVER_IP> <CIDR>
+```
 
-
-Example using the ephemeral droplet that I create:
+Example using the ephemeral droplet that I created:
 ```
 sergsoares-personal ~> sudo sshuttle --dns -NHr root@164.90.157.217 10.254.155.0/24Password:
 The authenticity of host '164.90.157.217 (164.90.157.217)' can't be established.
@@ -140,7 +144,7 @@ HH: ['netstat', '-n'] failed: FileNotFoundError(2, 'No such file or directory')
 
 Now lets discover inside server the IP for LXDware vm
 
-```
+```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# lxc list
 +---------+---------+------------------------+-------------------------------------------------+-----------------+-----------+
 |  NAME   |  STATE  |          IPV4          |                      IPV6                       |      TYPE       | SNAPSHOTS |
@@ -160,7 +164,7 @@ After access LXDware and configuring a new app:
 
 For allowing LXDware to manage LXD server, we need to add the LXDware certificate to LXDServer with the following procedures
 
-```
+```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# cat << EOF > lxdware.crt
 -----BEGIN CERTIFICATE-----
 MIICKzCCAbKgAwIBAgIBADAJBgcqhkjOPQQBMFcxEDAOBgNVBAMMB0xYRFdBUkUx
@@ -190,7 +194,7 @@ With the certificate alloweb by lxd server, we can connect from lxdware inside l
 
 If when try to launch a VM you receive an error, check again the procedure to install dependencies and look for LXD logs
 
-```
+```shell
 # Validating the logs from journal
 $ journalctl -u lxd.service
 
