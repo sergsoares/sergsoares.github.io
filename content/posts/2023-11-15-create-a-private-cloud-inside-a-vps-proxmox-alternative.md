@@ -32,18 +32,11 @@ Glossary:
 
 Create a VPS (or use a bare metal server) of your choice, I will use a droplet in Digital Ocean with Debian 12.
 
-Then ssh in it.
-
-### Check that KVM is working:
+Then ssh in it and check that KVM is working, then using kvm-ok we can validate if server support KVM:
 
 ```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# apt update
 root@debian-s-2vcpu-4gb-sfo3-01:~# apt install -y cpu-checker
-```
-
-Then using kvm-ok we can validate if server support KVM:
-
-```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# kvm-ok
 INFO: /dev/kvm exists
 KVM acceleration can be used
@@ -55,9 +48,9 @@ KVM acceleration can be used
 root@debian-s-2vcpu-4gb-sfo3-01:~# apt install --no-install-recommends -y lxd qemu-system qemu-system-x86 bridge-utils ovmf
 ```
 
-### Initialize lxd server
+### Initialize LXD server
 
-Initialize lxd server, we will use all default configuration in that step.
+We need to initialize lxd server, we will use all default configuration in that step.
 
 ```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# lxd init
@@ -91,13 +84,15 @@ Starting vm01
 
 Let's install [LXDware](https://lxdware.com) using a docker running inside a little VM.
 
-Create an instance for lxdware run
+Create a vm for LXDware:
 
 ```shell
 $ lxc launch images:ubuntu/22.04/cloud lxdware --vm --config limits.memory=512MiB --config limits.cpu=1
 ```
 
 #### Install docker dependency
+
+Then access the LXDware vm and install docker:
 
 ```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# lxc shell lxdware
@@ -130,7 +125,7 @@ With the CIDR we will create a command to forward traffic from our host to vm (p
 sudo sshuttle --dns -NHr <SERVER_USER>@<SERVER_IP> <CIDR>
 ```
 
-Example using the ephemeral droplet that I created:
+Example using the ephemeral droplet that I created (Connected to server means success):
 ```
 sergsoares-personal ~> sudo sshuttle --dns -NHr root@164.90.157.217 10.254.155.0/24Password:
 The authenticity of host '164.90.157.217 (164.90.157.217)' can't be established.
@@ -162,7 +157,7 @@ And with the IP and the sshuttle tunnel we can access, in our case http://10.254
 
 After access LXDware and configuring a new app:
 
-For allowing LXDware to manage LXD server, we need to add the LXDware certificate to LXDServer with the following procedures
+For allowing LXDware to manage LXD server, we need to add the LXDware certificate to LXDServer with the following procedures:
 
 ```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# cat << EOF > lxdware.crt
@@ -187,7 +182,7 @@ root@debian-s-2vcpu-4gb-sfo3-01:~#  lxc config trust add lxdware.crt
 root@debian-s-2vcpu-4gb-sfo3-01:~#  lxc config set core.https_address [::] 
 ```
 
-With the certificate alloweb by lxd server, we can connect from lxdware inside lxd server:
+With the certificate alloweb by lxd server, we can connect from lxdware inside lxd server.
 
 
 ### Troubleshooting
