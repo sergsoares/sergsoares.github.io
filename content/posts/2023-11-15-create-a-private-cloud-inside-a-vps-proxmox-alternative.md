@@ -1,13 +1,18 @@
 ---
 title: Create a private cloud inside a VPS (Proxmox alternative)
 draft: true
+categories:
+  - lxd
+  - vps
+  - lxc
+  - lxdware
 date: 2023-11-15T19:41:14.109Z
 ---
-It great to have a private cloud to create vm and validate lot of ideas of applications and infrastructure.
+It is great to have a private cloud to create virtual machines and validate ideas for applications and infrastructure.
 
-With Home Lab we can use great projects like proxmox, for most VPS provider is not an official image that can be used (beside can be imported).
+With Home Lab, we can use great projects like Proxmox, for most VPS providers, there is not an official image that can be used (beside it can be imported).
 
-For provide an alternative for who like me want to create and destroy lot of VM's that are used during several weeks for labs the following tutorial provide an alternative using LXD + LXDware:
+For those who, like me, want to create and destroy a lot of VMs that are used for several weeks in labs, the following tutorial provides an alternative using LXD and LXDware:
 
 Requirements:
 - VM with support for KVM
@@ -19,7 +24,6 @@ Glossary:
 - host (your actual desktop)
 - server (where we will run the lxd daemon)
 - vm (a Virtual Machine create with LXD)
-
 
 Create a VPS of your choice with support for KVM, I will use Debian 12 in digital ocean then ssh in it:
 
