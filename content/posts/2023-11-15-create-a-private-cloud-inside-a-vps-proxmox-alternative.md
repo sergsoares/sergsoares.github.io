@@ -6,7 +6,7 @@ categories:
   - vps
   - lxc
   - lxdware
-date: 2023-11-15T19:41:14.109Z
+date: 2023-11-15T20:43:05.322Z
 ---
 It is great to have a private cloud to create virtual machines and validate ideas for applications and infrastructure.
 
@@ -137,7 +137,7 @@ c : Connected to server.
 HH: ['netstat', '-n'] failed: FileNotFoundError(2, 'No such file or directory')
 ```
 
-Now lets discover inside server the IP for LXDware vm
+Now let's discover inside server the IP for LXDware vm
 
 ```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# lxc list
@@ -155,9 +155,23 @@ And with the IP and the sshuttle tunnel we can access, in our case http://10.254
 
 ### Configure LXDware:
 
-After access LXDware and configuring a new app:
+After access LXDware and create a user and password and made the login:
 
-For allowing LXDware to manage LXD server, we need to add the LXDware certificate to LXDServer with the following procedures:
+![](docs/images/lxd-registration.png)
+
+And the main console will appear:
+
+![](docs/images/dash.png)
+
+Now let's add a new host for LXDware, and click in "here" link:
+
+![](docs/images/add-host-detail.png)
+
+Now for allowing LXDware to manage LXD server, we need to add the LXDware certificate to LXDServer that will be provided in the next screen:
+
+![](docs/images/add-lxdware-crt.png)
+
+For example, It can be done with the following commands (substitute the .crt content or create lxdware.crt by hand).
 
 ```shell
 root@debian-s-2vcpu-4gb-sfo3-01:~# cat << EOF > lxdware.crt
@@ -182,7 +196,17 @@ root@debian-s-2vcpu-4gb-sfo3-01:~#  lxc config trust add lxdware.crt
 root@debian-s-2vcpu-4gb-sfo3-01:~#  lxc config set core.https_address [::] 
 ```
 
-With the certificate alloweb by lxd server, we can connect from lxdware inside lxd server.
+With the certificate allowed, we can connect from lxdware console inside lxd server using the IP of the server:
+
+![](docs/images/add-with-ip.png)
+
+![](docs/images/dash-with-access.png)
+
+Now we can access virtual machines inside the host created host
+
+![](docs/images/dash-virtual-machines.png)
+
+![](docs/images/lxdware-vm.png)
 
 
 ### Troubleshooting
