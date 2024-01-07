@@ -2,8 +2,7 @@
 title: Contribuições em vídeos 2022-2023
 draft: false
 categories:
-  - golang
-  - linux
+  - talks
 date: 2024-01-06T15:55:24.288Z
 ---
 
