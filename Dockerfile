@@ -1,6 +1,7 @@
-FROM golang:1.20.2-alpine3.17
+FROM golang:1.20.2
 
-RUN go install github.com/gohugoio/hugo@latest
+ARG HUGO_VERSION=v0.111.2
+RUN go install github.com/gohugoio/hugo@${HUGO_VERSION}
 
 WORKDIR /app
 RUN git clone https://github.com/sergsoares/sergsoares.github.io.git 

@@ -1,0 +1,21 @@
+FROM golang:1.20.2
+
+ARG HUGO_VERSION=v0.111.2
+RUN go install github.com/gohugoio/hugo@${HUGO_VERSION}
+
+WORKDIR /app
+
+# Create the entrypoint script using a heredoc
+RUN echo '#!/bin/sh\n\
+\n\
+# Clone the repository\n\
+git clone https://github.com/sergsoares/sergsoares.github.io.git\n\
+\n\
+cd sergsoares.github.io\n\
+# Run Hugo server\n\
+hugo server --bind 0.0.0.0 --disableFastRender --log' > entrypoint.sh
+
+RUN chmod +x entrypoint.sh
+
+
+CMD ["./entrypoint.sh"]
