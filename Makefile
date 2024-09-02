@@ -26,11 +26,29 @@ docker-build:
 docker-build-live:
 	docker build -t sergsoares-live -f Dockerfile.live .
 
+docker-build-dev:
+	docker build -t sergsoares-dev -f Dockerfile.dev .
+
 docker-run:
 	docker run -p 127.0.0.1:1313:1313 sergsoares
 
 docker-run-live:
-	docker run -p 127.0.0.1:1313:1313 sergsoares-live
+	docker run -p 8080:1313 sergsoares-live
+
+init-preview:
+	docker run --rm -d --name sergsoares-live -p 8080:1313 sergsoares-live
+
+run-dev:
+	docker run --rm -v /home/xubuntu/tasks/sergsoares.github.io:/app -d --name sergsoares-dev -p 8080:1313 sergsoares-dev
+
+logs-dev:
+	docker logs sergsoares-dev
+
+stop-dev:
+	docker stop sergsoares-dev
+
+stop-preview:
+	docker stop sergsoares-live
 
 analysis-docker:
 	dive sergsoares

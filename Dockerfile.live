@@ -17,5 +17,4 @@ hugo server --bind 0.0.0.0 --disableFastRender --log' > entrypoint.sh
 
 RUN chmod +x entrypoint.sh
 
-
 CMD ["./entrypoint.sh"]
