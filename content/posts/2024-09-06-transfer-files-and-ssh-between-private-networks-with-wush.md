@@ -5,7 +5,7 @@ categories:
   - wush
   - wireguard
   - tailscale
-date: 2024-09-03
+date: 2024-09-06
 ---
 
 A interesting app that I found recently navigating on [Reddit](https://reddit.com/) is wush.
