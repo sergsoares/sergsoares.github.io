@@ -1,0 +1,23 @@
+{
+  "name": "Sergsoares Blog",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "files.defaultLanguage": "markdown"
+  },
+
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker"
+  ],
+
+  "forwardPorts": [1313],
+
+  "features": {
+    "ghcr.io/devcontainers/features/hugo:1": {
+        "extended": true
+    }
+  }
+}
