@@ -64,9 +64,9 @@ params:
   #       id: DIC_kwDOEtnPc84B_WKP
 
 menu:
-  header:
-    - name: Articles
-      url: "/articles/"
+  # header:
+  #   - name: Articles
+  #     url: "/articles/"
     # - name: About
     #   url: "/blog/"
   # footer:
