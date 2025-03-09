@@ -33,13 +33,13 @@ docker-run:
 	docker run -p 127.0.0.1:1313:1313 sergsoares
 
 docker-run-live:
-	docker run -p 8080:1313 sergsoares-live
+	docker run -p 8081:1313 sergsoares-live
 
 init-preview:
 	docker run --rm -d --name sergsoares-live -p 8080:1313 sergsoares-live
 
 run-dev:
-	docker run --rm -v /home/xubuntu/tasks/sergsoares.github.io:/app -d --name sergsoares-dev -p 8080:1313 sergsoares-dev
+	docker run --rm -v /home/xubuntu/tasks/sergsoares.github.io:/app --network host -d --name sergsoares-dev sergsoares-dev
 
 logs-dev:
 	docker logs sergsoares-dev
