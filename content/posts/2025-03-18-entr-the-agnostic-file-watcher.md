@@ -13,7 +13,7 @@ Entr is a file watcher and helps to rerun commands when files change, but the be
 
 ```sh
 ls *.c | entr -rc myscript.sh
-``
+```
 
 You can use it to execute a local script or powering entr with make (or a package.json or justfile) being a awesome match.
 
